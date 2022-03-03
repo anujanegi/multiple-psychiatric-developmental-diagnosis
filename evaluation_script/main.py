@@ -60,22 +60,5 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
         output["submission_result"] = output["result"][0]["test_split"]
         print("Completed evaluation for Pseudo Test Phase")
         
-    elif phase_codename == "dev":
-        print("Evaluating for Dev Phase")
-        output["result"] = [
-            {
-                "test_split": {
-                    "AUPRC": auprc,
-                    "AUROC": auroc,
-                    "Brier Score": brier_score,
-                    "Hamming Score": hamming_score,
-                    "Micro Avg F1 score": micro_avg_f1_score
-                }
-            }
-        ]
-        # To display the results in the result file
-        output["submission_result"] = output["result"][0]["test_split"]
-        print("Completed evaluation for Dev Phase")
-        
     print(output)
     return output
