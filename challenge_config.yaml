@@ -1,6 +1,6 @@
 # If you are not sure what all these fields mean, please refer our documentation here:
 # https://evalai.readthedocs.io/en/latest/configuration.html
-title: Multiple Psychiatric Developmental Diagnosis
+title: Multiple Psychiatric Developmental Diagnosis QA
 short_description: Predicting multiple psychiatric developmental diagnosis (i.e. multi-task multi-label classification) challenge.
 description: templates/description.html
 evaluation_details: templates/evaluation_details.html
@@ -62,12 +62,154 @@ challenge_phases:
     default_submission_meta_attributes:
       - name: method_name
         is_visible: True
-        required: True
       - name: method_description
         is_visible: True
       - name: project_url
         is_visible: True
-        required: True
+      - name: pl_reg_int_use_prd_name
+        is_visible: True
+      - name: pl_reg_int_use_prd_cl_use
+        is_visible: True
+      - name: pl_reg_int_use_prd_tsk
+        is_visible: True
+      - name: pl_reg_int_use_prd_cat
+        is_visible: True
+      - name: pl_reg_int_use_prd_usrgrp
+        is_visible: True
+      - name: pl_reg_int_use_prd_opmod
+        is_visible: True
+      - name: pl_reg_int_use_prd_autl
+        is_visible: True
+      - name: dc_tv_pl_dat_src
+        is_visible: True
+      - name: dc_tv_pl_dat_numsamp
+        is_visible: True
+      - name: dc_tv_pl_dat_mod
+        is_visible: True
+      - name: dc_tv_pl_dat_noise
+        is_visible: True
+      - name: dc_tv_pl_dat_mis
+        is_visible: True
+      - name: dc_tv_pl_dat_inc_exc
+        is_visible: True
+      - name: dc_reg_dat_priv
+        is_visible: True
+      - name: dc_eth_dat_priv_cons
+        is_visible: True
+      - name: dc_eth_dat_priv_anon
+        is_visible: True
+      - name: dp_tv_numsamp
+        is_visible: True
+      - name: dp_tv_gndtrh
+        is_visible: True
+      - name: dp_tv_lbl
+        is_visible: True
+      - name: dp_tv_part
+        is_visible: True
+      - name: dp_tv_ovp
+        is_visible: True
+      - name: dp_eth_de_id
+        is_visible: True
+      - name: dp_reg_gndt
+        is_visible: True
+      - name: dp_tv_prev
+        is_visible: True
+      - name: dp_tv_preprop
+        is_visible: True
+      - name: mt_eth_sen
+        is_visible: True
+      - name: mt_tv_arch
+        is_visible: True
+      - name: mtun_tv_sen
+        is_visible: True
+      - name: mtun_tv_val
+        is_visible: True
+      - name: mtun_tv_fet
+        is_visible: True
+      - name: mtun_cl_decth
+        is_visible: True
+      - name: mtun_cl_set
+        is_visible: True
+      - name: meval_eth_usr
+        is_visible: True
+      - name: meval_tv_opt
+        is_visible: True
+      - name: meval_tv_param
+        is_visible: True
+      - name: meval_tv_gen
+        is_visible: True
+      - name: meval_tv_per_comp
+        is_visible: True
+      - name: meval_tv_per_comp_dis
+        is_visible: True
+      - name: meval_tv_intp_tdoff
+        is_visible: True
+      - name: meval_cl_permet_crt
+        is_visible: True
+      - name: meval_cl_patsaf
+        is_visible: True
+      - name: meval_cl_mod_spec
+        is_visible: True
+      - name: meval_cl_rskprob
+        is_visible: True
+      - name: mdeploy_cl_lat
+        is_visible: True
+      - name: mdeploy_cl_prac
+        is_visible: True
+      - name: mdeploy_cl_care_qual
+        is_visible: True
+      - name: mdeploy_cl_wkfl_int
+        is_visible: True
+      - name: mdeploy_cl_rsk_prob
+        is_visible: True
+      - name: mdeploy_cl_inp_feat
+        is_visible: True
+      - name: mdeploy_cl_recom
+        is_visible: True
+      - name: mdeploy_cl_patcom
+        is_visible: True
+      - name: mdeploy_reg_saf
+        is_visible: True
+      - name: mmain_reg_sys
+        is_visible: True
+      - name: mmain_reg_contlr
+        is_visible: True
+      - name: pl_reg_int_use_pat_patgrp
+        is_visible: True
+      - name: pl_reg_int_use_md_devplr
+        is_visible: True
+      - name: pl_reg_int_use_md_devkt
+        is_visible: True
+      - name: pl_reg_int_use_md_devperiod
+        is_visible: True
+      - name: pl_reg_int_use_md_reg
+        is_visible: True
+      - name: pl_reg_int_use_md_lic
+        is_visible: True
+      - name: dc_tv_pl_dat_coll_plc
+        is_visible: True
+      - name: dc_tv_pl_dat_coll_period
+        is_visible: True
+      - name: dc_tv_pl_dat_coll_auth
+        is_visible: True
+      - name: dc_tv_pl_dat_coll_fund
+        is_visible: True
+      - name: dc_tv_pl_dat_samprate
+        is_visible: True
+      - name: dc_tv_pl_dat_dim
+        is_visible: True
+      - name: dc_tv_pl_dat_mod
+        is_visible: True
+      - name: dc_tv_pl_dat_devtyp
+        is_visible: True
+      - name: dc_eth_dat_incl_excl
+        is_visible: True
+      - name: dp_eth_saf_sec_prtcol
+        is_visible: True
+      - name: mt_tv_out
+        is_visible: True
+      - name: meval_tv_param_config
+        is_visible: True
     submission_meta_attributes:
       - name: On which data did you train your model?
         description: 
